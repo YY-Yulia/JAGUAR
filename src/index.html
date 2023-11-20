@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Sports Cars, Executive Saloons and SUVs | Jaguar UK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/head-style.scss">
+    <link rel="stylesheet" href="scss/video-style.scss">
+    <link rel="stylesheet" href="scss/catalog-style.scss">
+    <link rel="stylesheet" href="scss/news-style.scss">
+    <link rel="stylesheet" href="scss/purchase-style.scss">
+    <link rel="stylesheet" href="scss/footer-style.scss">
+    <link rel="stylesheet" href="scss/footernav-style.scss">
+    <link rel="stylesheet" href="scss/subfooter-style.scss">
 </head>
 <body>
     <header class="head">
         <div class="logo">
-            <a class="logo-jaguar" href="#"><img src="/img/logo-jaguar-test.avif" alt="logo-jaguar"></a>
+            <a class="logo-jaguar" href="#"><img class="logo-jaguar__img" src="/img/logo-jaguar-test.avif" alt="logo-jaguar"></a>
         </div>
         <div class="nav">
             <div class="nav-left">
@@ -22,7 +31,7 @@
                 <a class="nav-right__item" href="#">SEARCH</a>
                 <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
                 <a class="nav-right__item" href="#">RETAILERS</a>
-                <i class="fa-light fa-user-large" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-user" style="color: #ffffff;"></i>
                 <a class="nav-right__item" href="#">ACCOUNT</a>
         </div>
     </header>
@@ -41,8 +50,9 @@
                 <div class="catalog-item__name">JAGUAR F-PACE</div>
                 <div class="catalog-item__description">Experience luxury performance SUV.</div>
                 <a class="catalog-item__btn" href="#">
-                    <button class="catalog-item__button catalog-item__button_hover">EXPLORE</button> 
+                    <button class="catalog-item__button catalog-item__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>EXPLORE</button> 
                 </a>
+                <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
                 <a class="catalog-item__link catalog-item__link_hover">BUILD YOUR OWN</a>
             </div>
             <div class="catalog-item">
@@ -52,8 +62,9 @@
                 <div class="catalog-item__name">JAGUAR I-PACE</div>
                 <div class="catalog-item__description">Introducing Jaguar’s first all-electric performance SUV.</div>
                 <a class="catalog-item__btn" href="#">
-                    <button class="catalog-item__button catalog-item__button_hover">EXPLORE</button> 
+                    <button class="catalog-item__button catalog-item__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>EXPLORE</button> 
                 </a>
+                <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
                 <a class="catalog-item__link catalog-item__link_hover">BUILD YOUR OWN</a>
             </div>
             <div class="catalog-item">
@@ -63,28 +74,33 @@
                 <div class="catalog-item__name">JAGUAR F-TYPE</div>
                 <div class="catalog-item__description">The final edition.</div>
                 <a class="catalog-item__btn" href="#">
-                    <button class="catalog-item__button catalog-item__button_hover">EXPLORE</button> 
+                    <button class="catalog-item__button catalog-item__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>EXPLORE</button> 
                 </a>
+                <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
                 <a class="catalog-item__link catalog-item__link_hover">I WANT ONE</a>
             </div>
         </div>
     </section>
     <section class="news">
         <div class="news-container">
-            <div class="news-slide">
-                <div class="news-slide__img"><img class="news-slide__picture" src="/img/formula_e_front_profile_11k_v2_21.avif" alt="car"></div>
-                <div class="news-slide__name">JAGUAR TCS RACING</div>
-                <div class="news-slide__description">The ultimate balance of power and efficiency.</div>
-                <a class="news-slide__btn" href="#">
-                    <button class="news-slide__button news-slide__button_hover">LEARN MORE</button> 
-                </a>
+            <div class="news-img"><img class="news-picture" src="/img/formula_e_front_profile_11k_v2_21.avif" alt="car"></div>
+                <div class="news-description">
+                    <div class="news-description__left">
+                        <div class="news-description__name">JAGUAR TCS RACING</div>
+                    </div>
+                    <div class="news-description__right">
+                        <div class="news-description__desc">The ultimate balance of power and efficiency.</div>
+                        <a class="news-description__btn" href="#">
+                            <button class="news-description__button news-description__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>LEARN MORE</button> 
+                        </a>
+                    </div>
             </div>
-            <div class="news-slide">
+            <!-- <div class="news-slide">
                 <div class="news-slide__img"><img class="news-slide__picture" src="/img/REAR_DETAIL63278_R3.avif" alt="car"></div>
                 <div class="news-slide__name">JAGUAR NEW ERA BEGINS</div>
                 <div class="news-slide__description">With an all-electric four-door GT to be introduced in selected markets in 2024, with client deliveries following in 2025.</div>
                 <a class="news-slide__btn" href="#">
-                    <button class="news-slide__button news-slide__button_hover">STAY CONNECTED</button> 
+                    <button class="news-slide__button news-slide__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>STAY CONNECTED</button> 
                 </a>
             </div>
             <div class="news-slide">
@@ -92,7 +108,7 @@
                 <div class="news-slide__name">ADVANCED SECURITY FROM YOUR SMARTPHONE</div>
                 <div class="news-slide__description">The new Jaguar Remote App puts a wealth of sophisticated security and tracking features at your fingertips.</div>
                 <a class="news-slide__btn" href="#">
-                    <button class="news-slide__button news-slide__button_hover">FIND OUT MORE</button> 
+                    <button class="news-slide__button news-slide__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>FIND OUT MORE</button> 
                 </a>
             </div>
             <div class="news-slide">
@@ -100,315 +116,245 @@
                 <div class="news-slide__name">ELECTRIFYING POWER</div>
                 <div class="news-slide__description">Thrilling to drive. Easy to live with.</div>
                 <a class="news-slide__btn" href="#">
-                    <button class="news-slide__button news-slide__button_hover">EXPLORE</button> 
+                    <button class="news-slide__button news-slide__button_hover"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>EXPLORE</button> 
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="purchase">
-        <div class="purchase-item">
+        <div class="purchase-item purchase-item1">
             <i class="fa-solid fa-car" style="color: #ffffff;"></i>
-            <a class="purchase-item__link">BUILD AND ORDER ONLINE</a>
+            <a class="purchase-item__link purchase-item__link_hover"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>BUILD AND ORDER ONLINE</a>
             <div class="purchase-item__description">Your perfect Jaguar is just a few clicks away</div>
         </div>
-        <div class="purchase-item">
+        <div class="purchase-item purchase-item2">
             <i class="fa-solid fa-car" style="color: #ffffff;"></i>
-            <a class="purchase-item__link">COMPARE OUR VEHICLES</a>
+            <a class="purchase-item__link purchase-item__link_hover"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>COMPARE OUR VEHICLES</a>
             <div class="purchase-item__description">Select up to three Jaguar vehicles and compare them side by side</div>
         </div>
-        <div class="purchase-item">
+        <div class="purchase-item purchase-item3">
             <i class="fa-solid fa-calculator" style="color: #ffffff;"></i>
-            <a class="purchase-item__link">GET A FINANCE QUOTE</a>
+            <a class="purchase-item__link purchase-item__link_hover"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>GET A FINANCE QUOTE</a>
             <div class="purchase-item__description">Explore our range of finance products and personalized an indicative finance quotation</div>
         </div>
-        <div class="purchase-item">
-            <i class="fa-light fa-location-dot" style="color: #ffffff;"></i>
-            <a class="purchase-item__link">FIND A RETAILER</a>
+        <div class="purchase-item purchase-item4">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <a class="purchase-item__link purchase-item__link_hover"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>FIND A RETAILER</a>
             <div class="purchase-item__description">Search for a Jaguar Retailer near you</div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-lists">
+            <div class="footer-box">
                 <ul class="footer-list">OUT VEHICLES
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR F-PACE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR F-PACE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR E-PACE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR E-PACE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR I-PACE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR I-PACE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR F-TYPE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR F-TYPE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR XE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR XE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR XF</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR XF</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">SALOON CARS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">SALOON CARS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">SUV CARS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">SUV CARS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">TOWING</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">TOWING</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">ELECTRIC CARS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">ELECTRIC CARS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">SPECIAL VEHICLE OPERATIONS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">SPECIAL VEHICLE OPERATIONS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">COMPARE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">COMPARE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">VEHICLE DATA EMISSIONS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">VEHICLE DATA EMISSIONS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">BUILD, FIND & ORDER</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">BUILD, FIND & ORDER</a>
                     </li>
                 </ul>
                 <ul class="footer-list">ABOUT JAGUAR
                     <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">OVERVIEW</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR CLASSIC</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR CLASSIC</a>
                     </li>
                 </ul>
                 <ul class="footer-list">JAGUAR EXPERIENCES
                     <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">OVERVIEW</a>
                     </li>
                 </ul>
                 <ul class="footer-list">HERITAGE
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR X-PACE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR X-PACE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR S-TYPE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR S-TYPE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">JAGUAR XJ</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">JAGUAR XJ</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul class="footer-list">OUT VEHICLES
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR F-PACE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR E-PACE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR I-PACE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR F-TYPE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR XE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR XF</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">SALOON CARS</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">SUV CARS</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">TOWING</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">ELECTRIC CARS</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">SPECIAL VEHICLE OPERATIONS</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">COMPARE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">VEHICLE DATA EMISSIONS</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">BUILD, FIND & ORDER</a>
-                    </li>
-                </ul>
-                <ul class="footer-list">ABOUT JAGUAR
-                    <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR CLASSIC</a>
-                    </li>
-                </ul>
-                <ul class="footer-list">JAGUAR EXPERIENCES
-                    <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
-                    </li>
-                </ul>
-                <ul class="footer-list">HERITAGE
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR X-PACE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR S-TYPE</a>
-                    </li>
-                    <li>
-                        <a class="footer-list__items" href="#">JAGUAR XJ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-list">
+            <div class="footer-box">
                 <ul class="footer-list">OFFERS AND FINANCE
                     <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">OVERVIEW</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">PERSONAL OFFERS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">PERSONAL OFFERS</a>
                     </li>
                 </ul>
                 <ul class="footer-list">RESEARCH
                     <li>
-                        <a class="footer-list__items" href="#">KEEP ME INFORMED</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">KEEP ME INFORMED</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">EXPLORE OUR RANGE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">EXPLORE OUR RANGE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">FINANCE CALCULATOR</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">FINANCE CALCULATOR</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">COMPETITOR COMPARISON</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">COMPETITOR COMPARISON</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">ELECTRIC, PLUG-IN HYBRID, PETROL OR EURO 6 DIESEL</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">ELECTRIC, PLUG-IN HYBRID, PETROL OR EURO 6 DIESEL</a>
                     </li>
                 </ul>
                 <ul class="footer-list">REMOTE APP
                     <li>
-                        <a class="footer-list__items" href="#">REMOTE APP FOR APPLE IOS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">REMOTE APP FOR APPLE IOS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">REMOTE APP FOR ANDROID</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">REMOTE APP FOR ANDROID</a>
                     </li>
                 </ul>
                 <ul class="footer-list">INNOVATION AND TECHNOLOGY
                     <li>
-                        <a class="footer-list__items" href="#">INCONTROL</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">INCONTROL</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">SPECIAL VEHICLE OPERATIONS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">SPECIAL VEHICLE OPERATIONS</a>
                     </li>
-                    <ul>GO I-PACE
-                        <li>
-                            <a class="footer-list__items" href="#">DOWNLOAD ON IOS</a>
-                        </li>
+                <ul class="footer-list">GO I-PACE
+                    <li>
+                        <a class="footer-list__items footer-list__items_hover" href="#">DOWNLOAD ON IOS</a>
+                    </li>
                 </ul>
             </div>
-            <div class="footer-list">
+            <div class="footer-box">
                 <ul class="footer-list">OWNERSHIP
                     <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">OVERVIEW</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">INCONTROL</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">INCONTROL</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">VEHICLE RECALL SEARCH</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">VEHICLE RECALL SEARCH</a>
                     </li>
                 </ul>
                 <ul class="footer-list">SERVICE AND MAINTENANCE
                     <li>
-                        <a class="footer-list__items" href="#">MAINTENANCE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">MAINTENANCE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">SERVICING</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">SERVICING</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">GUIDES AND MANUALS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">GUIDES AND MANUALS</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">HEALTH CHECK</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">HEALTH CHECK</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">DEF AND AdBlue</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">DEF AND AdBlue</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">BUY CLASSIC GENUINE PARTS</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">BUY CLASSIC GENUINE PARTS</a>
                     </li>
                 </ul>
                 <ul class="footer-list">WARRANTIES
                     <li>
-                        <a class="footer-list__items" href="#">OVERVIEW</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">OVERVIEW</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">MANUFACTURER WARRANTY</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">MANUFACTURER WARRANTY</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">PARTS & ACCESSORIES WARRANTY</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">PARTS & ACCESSORIES WARRANTY</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">PAINT & CORROSION WARRANTY</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">PAINT & CORROSION WARRANTY</a>
                     </li>
                 </ul>
                 <ul class="footer-list">ASSISTANCE
                     <li>
-                        <a class="footer-list__items" href="#">ROADSIDE ASSISTANCE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">ROADSIDE ASSISTANCE</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">CONTACT JAGUAR</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">CONTACT JAGUAR</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">FIND A RETAILER</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">FIND A RETAILER</a>
                     </li>
                     <li>
-                        <a class="footer-list__items" href="#">INCONTROL ASSISTANCE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">INCONTROL ASSISTANCE</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul class="footer-list">JOIN THE CONVERSATION
+            <div class="footer-box">
+                <ul class="footer-list footer-list1">JOIN THE CONVERSATION
                     <li>
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                        <a class="footer-list__items" href="#">FACEBOOK</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">FACEBOOK</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                        <a class="footer-list__items" href="#">X</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">X</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        <a class="footer-list__items" href="#">YOUTUBE</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">YOUTUBE</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        <a class="footer-list__items" href="#">INSTAGRAM</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">INSTAGRAM</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                        <a class="footer-list__items" href="#">LINKEDIN</a>
+                        <a class="footer-list__items footer-list__items_hover" href="#">LINKEDIN</a>
                     </li>
             </div>
         </div>
     </footer>
     <section class="footernav">
         <div class="footernav-conteiner">
-            <a class="footer-container__items" href="#">CHANGE MARKET</a>
-            <a class="footer-container__items" href="#">CAREERS</a>
-            <a class="footer-container__items" href="#">PRIVACY POLICY</a>
-            <a class="footer-container__items" href="#">COOKIE POLICY</a>
-            <a class="footer-container__items" href="#">JAGUAR LAND ROVER CORPORATE</a>
+            <a class="footernav-container__items footernav-container__items_hover footernav-container__items1" href="#">CHANGE MARKET</a>
+            <a class="footernav-container__items footernav-container__items_hover" href="#">CAREERS</a>
+            <a class="footernav-container__items footernav-container__items_hover" href="#">PRIVACY POLICY</a>
+            <a class="footernav-container__items footernav-container__items_hover" href="#">COOKIE POLICY</a>
+            <a class="footernav-container__items footernav-container__items_hover" href="#">JAGUAR LAND ROVER CORPORATE</a>
         </div>
     </section>
     <section class="subfooter">

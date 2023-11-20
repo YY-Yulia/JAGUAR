@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.video-container {
+    width: 100%;
+    height: 650.06px;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 72px;
+    position: relative;
+    .video-container__jaguar {
+        width: 1389px;
+        height: 560.06px;
+    }
+    .video-container__title {
+        font-family: Montserrat;
+        letter-spacing: .15em;
+        font-size: 24px;
+        font-weight: 800;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: absolute;
+        left: 100px;
+        top: 630px;
+    }
+}

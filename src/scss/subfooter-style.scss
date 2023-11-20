@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.subfooter {
+    width: 100%;
+    background-color: $background-grey;
+    .subfooter-container {
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    .subfooter-container__text {
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 100;
+        color: white;
+    }
+}

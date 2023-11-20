@@ -1,0 +1,14 @@
+@mixin footer-subtitle {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+@mixin footer-text {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
