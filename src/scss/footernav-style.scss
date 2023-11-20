@@ -8,6 +8,9 @@
 .footernav {
     width: 100%;
     height: 47.8px;
+    @media (max-width: 870px) {
+        height: 100%;
+    }
     background-color: $background-grey;
     border-top: 0.5px solid #141414;
     border-bottom: 0.5px solid #141414;
@@ -16,6 +19,13 @@
     .footernav-container__items {
         @include footer-text ();
         margin-right: 30px;
+        @media (max-width: 870px) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            margin-left: 20px;
+        }
     }
     .footernav-container__items_hover:hover {
         transition-duration: 0.5s;
@@ -23,5 +33,8 @@
     }
     .footernav-container__items1 {
         padding-left: 40px;
+        @media (max-width: 870px) {
+            padding-left: 0;
+        }
     }
 }

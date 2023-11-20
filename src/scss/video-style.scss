@@ -17,18 +17,28 @@
     position: relative;
     .video-container__jaguar {
         width: 1389px;
+        @media (max-width: 1368px) {
+            width: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 600px) {
+        object-fit: cover;          
+        }
         height: 560.06px;
     }
     .video-container__title {
         font-family: Montserrat;
         letter-spacing: .15em;
         font-size: 24px;
+        @media (max-width: 390px) {
+            font-size: 19px;
+        }
         font-weight: 800;
         color: white;
         margin-top: 30px;
         margin-bottom: 30px;
         position: absolute;
-        left: 100px;
+        left: 7%;
         top: 630px;
     }
 }
